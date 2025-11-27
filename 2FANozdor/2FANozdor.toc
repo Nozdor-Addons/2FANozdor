@@ -2,13 +2,8 @@
 ## Title: |cffff0000[2FA]|r |cffffd700Nozdor|r
 ## Notes: Аддон для управления двухфакторной аутентификацией. Показывает 2FA ключ, генерирует QR-код для сканирования и позволяет активировать/деактивировать 2FA.
 ## Author: Nozdor Team
-## Version: 1.2
+## Version: 1.1
 ## DefaultState: Enabled
-## X-Category: Interface Enhancements
-## X-Website: https://nozdor.com
-## X-Credits: Nozdor
-## X-License: All Rights Reserved
-## X-Copyright: Copyright © 2025 Nozdor. All rights reserved.
 
 qrencode.lua
 2FANozdor.lua
