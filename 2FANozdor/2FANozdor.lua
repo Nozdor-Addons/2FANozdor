@@ -220,12 +220,8 @@ local function TWOFANozdor_CreateFrame()
         if code and code ~= "" and string.len(code) == 6 then
             -- Отправляем команду активации
             local command = ".account 2fa setup " .. code
-            if ChatFrame1 and ChatFrame1.editBox then
-                ChatFrame1.editBox:SetText(command)
-                ChatEdit_SendText(ChatFrame1.editBox, 0)
-            else
-                SendChatMessage(command, "SAY")
-            end
+            codeEditBox:ClearFocus()
+            SendChatMessage(command, "SAY")
         end
     end)
     
@@ -234,12 +230,8 @@ local function TWOFANozdor_CreateFrame()
         if code and code ~= "" and string.len(code) == 6 then
             -- Отправляем команду отключения
             local command = ".account 2fa remove " .. code
-            if ChatFrame1 and ChatFrame1.editBox then
-                ChatFrame1.editBox:SetText(command)
-                ChatEdit_SendText(ChatFrame1.editBox, 0)
-            else
-                SendChatMessage(command, "SAY")
-            end
+            codeEditBox:ClearFocus()
+            SendChatMessage(command, "SAY")
         end
     end)
 
